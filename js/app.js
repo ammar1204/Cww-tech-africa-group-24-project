@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const currentDate = document.querySelector('.current-date');
 const daysTag = document.querySelector('.days');
 const prevNextIcon = document.querySelectorAll('.icons span');
@@ -67,6 +66,4 @@ prevNextIcon.forEach(icon => {
         renderCalendar();
     });
 });
-=======
 
->>>>>>> 3e1c252b32870e9aa62d7163d64471419659e2e3
