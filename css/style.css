@@ -116,10 +116,18 @@ nav{
     }
 }
 
-nav .footer{
+@media screen and (max-width:768px){
+   body{
+    background-color: #8e457e;
+   } 
+    
+}
+
+footer{
     background: #1d3044;
     color: #ffff;
     margin-bottom: 0rem;
+    margin-top: 149.5px;
     height: 70px;
     width: 100%;
     text-align: center;
@@ -127,5 +135,5 @@ nav .footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 75%;
+    font-size: 80%;
 }
