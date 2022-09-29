@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Popins', sans-serif;
+}
+body{
+    background-color: aqua;
+}
+nav{
+    background: #1d3044;
+    color: #ffff;
+    height: 70px;
+    width: 100%;
+
+}
+.wrapper{
+    margin: 3rem auto;
+    max-width: 340px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    background: #cbe695;
+    border-radius: 0.5rem;
+}
+.wrapper .calendar-picture{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 170px;
+    padding: 0.2rem;
+    background: url('../image/lagos.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.calendar-picture .current-date{
+    font-size: 1rem;
+    font-weight: 400;
+    color: yellow;
+}
+.calendar-picture #current-date-2{
+    color: yellow;
+}
+.calendar-picture .icons span{
+    font-size: 1.2rem;
+    margin: 0.6rem;
+    text-align: center;
+    line-height: 34px;
+    cursor: pointer;
+    background: yellow;
+    padding: 0.1rem 0.4rem;
+}
+.calendar{
+    padding-top: 0.8rem;
+}
+.calendar .weeks li{
+    padding: 0.5rem;
+    font-weight: 700;
+    color: midnightblue;
+}
+.calendar ul{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.weeks li:nth-child(1){
+    color: red;
+}
+.calendar ul li{
+    width: calc(100% /7);
+    position: relative;
+}
+.calendar .days li{
+    padding: 0.5rem 0rem;
+    cursor: pointer;
+    z-index: 1;
+}
+.days li.active{
+    color: #fff;
+}
+.days li.inactive{
+    color: #2c2a28;
+}
+.calendar .days li::before{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+
+}
+.days li:hover::before{
+    background: #f2f2f2;
+}
+.days li.active::before{
+    background: #8e457e;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:400px){
+    .wrapper{
+        max-width: 310px;
+        width: 100%;
+    }
+}
