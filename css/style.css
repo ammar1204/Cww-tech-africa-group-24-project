@@ -116,7 +116,7 @@ nav{
     }
 }
 
-nav{
+nav .footer{
     background: #1d3044;
     color: #ffff;
     margin-bottom: 0rem;
@@ -124,4 +124,8 @@ nav{
     width: 100%;
     text-align: center;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60%;
 }
